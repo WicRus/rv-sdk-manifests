@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote sync-j="8" name="ff" fetch="https://gitlab.com/firefly-linux/" revision="rv1126_rv1109/firefly"/>
+  <remote sync-j="8" name="br" fetch="https://github.com/buildroot/" revision="2026.08.x"/>
+  <remote sync-j="8" name="gh" fetch="https://github.com/WicRus/" revision="master"/>
+  <default remote="gh"/>
+
+  <project name="rv-sdk-u-boot_1126" path="app/u-boot_1126"/>
+  <project name="rv-sdk-kernel_1126" path="app/kernel_1126"/>
+
+  <project name="rv-sdk-u-boot_1126b" path="app/u-boot_1126b"/>
+  <project name="rv-sdk-kernel_1126b" path="app/kernel_1126b"/>
+
+  <project name="rv-sdk-u-boot_1106" path="app/u-boot_1106"/>
+  <project name="rv-sdk-kernel_1106" path="app/kernel_1106"/>
+
+  <project remote="br" name="buildroot" path="br"/>
+  <project remote="ff" name="prebuilts/gcc/linux-x86/arm/gcc-arm-8.3-2019.03-x86_64-arm-linux-gnueabihf" path="prebuilts/gcc/linux-x86/arm/gcc-arm-8.3-2019.03-x86_64-arm-linux-gnueabihf"/>
+
+</manifest>
